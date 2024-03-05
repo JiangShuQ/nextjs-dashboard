@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { VercelRequest, VercelResponse } from '@vercel/node';
 
 // 飞书机器人的 Webhook 地址
 const webhookUrl =
