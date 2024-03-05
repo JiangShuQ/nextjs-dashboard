@@ -19,9 +19,9 @@ async function sendLarkMessage(message: string) {
   }
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function GET() {
   // 发送一条测试消息
   await sendLarkMessage('这是一条来自 Node.js 的测试消息！');
 
-  return res.json({ status: 200 });
+  return Response.json({ status: 200 });
 }
