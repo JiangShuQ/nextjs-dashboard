@@ -1,4 +1,5 @@
-const axios = require('axios');
+import axios from 'axios';
+import { VercelRequest, VercelResponse } from '@vercel/node';
 
 // 飞书机器人的 Webhook 地址
 const webhookUrl =
@@ -18,9 +19,9 @@ async function sendLarkMessage(message: string) {
   }
 }
 
-export async function GET() {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // 发送一条测试消息
-  sendLarkMessage('这是一条来自 Node.js 的测试消息！');
+  await sendLarkMessage('这是一条来自 Node.js 的测试消息！');
 
-  return Response.json({ status: 200 });
+  return res.json({ status: 200 });
 }

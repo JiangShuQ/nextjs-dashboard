@@ -2,7 +2,7 @@
     "crons": [
       {
         "path": "/api/cron/lark_notification_bot",
-        "schedule": "45 15 * * *"
+        "schedule": "56 15 * * *"
       }
     ]
   }
