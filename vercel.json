@@ -1,0 +1,8 @@
+{
+    "crons": [
+      {
+        "path": "/scripts/lark_notification_bot.js",
+        "schedule": "26 14 * * * *"
+      }
+    ]
+  }
