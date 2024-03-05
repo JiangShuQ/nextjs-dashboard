@@ -20,7 +20,7 @@ async function sendLarkMessage(message: string) {
 
 export async function GET() {
   // 发送一条测试消息
-  await sendLarkMessage('这是一条来自 Node.js 的测试消息！最后一次！！！');
+  await sendLarkMessage('这是一条来自 Node.js 的测试消息！最后一次 * 2');
 
   return Response.json({ status: 200 });
 }
