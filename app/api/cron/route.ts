@@ -18,7 +18,7 @@ async function sendLarkMessage(message: string) {
   }
 }
 
-export default async function GET() {
+export async function GET() {
   // 发送一条测试消息
   await sendLarkMessage('这是一条来自 Node.js 的测试消息！');
 
