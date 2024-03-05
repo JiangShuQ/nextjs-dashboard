@@ -2,7 +2,7 @@
     "crons": [
       {
         "path": "/scripts/lark_notification_bot",
-        "schedule": "4 15 * * *"
+        "schedule": "8 15 * * *"
       }
     ]
   }
